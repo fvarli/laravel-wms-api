@@ -36,7 +36,7 @@ class BoxController extends Controller
     // Assign a location to the box and record the WMS movement
     public function assignLocation(AssignLocationRequest $request, Box $box)
     {
-        $box = $this->service->assignLocation($id, $request->location_id);
+        $box = $this->service->assignLocation($box->id, $request->location_id);
 
         if (!$box) {
             return response()->json(['error'=>'The box was not found or was not added to the WMS.'], 422);
