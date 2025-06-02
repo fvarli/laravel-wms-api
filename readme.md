@@ -229,7 +229,7 @@ curl -X POST http://localhost:8080/api/boxes/$BOX_ID/assign-location \
 
 ---
 
-## Postman Collection
+## 📮 Postman Collection
 
 The project includes a complete Postman collection and environment for testing all API endpoints. You can find these files in:
 
