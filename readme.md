@@ -227,6 +227,19 @@ curl -X POST http://localhost:8080/api/boxes/$BOX_ID/assign-location \
   -d '{"location_id": 1}'
 ```
 
+---
+
+## Postman Collection
+
+The project includes a complete Postman collection and environment for testing all API endpoints. You can find these files in:
+
+- Collection: `resources/docs/postman/laravel-wms-api.postman_collection.json`
+- Environment: `resources/docs/postman/laravel-wms-api.postman_environment.json`
+
+Import these files into Postman to quickly test the API.
+
+---
+
 ## 📸 API Screenshots
 
 Below are screenshots of the API in action using Postman, demonstrating the key WMS functionality:
