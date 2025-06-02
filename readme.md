@@ -390,7 +390,7 @@ docker-compose exec db mysql -u wms_user -p laravel_wms
 ### Adding New Features
 
 1. **Models**: Add new Eloquent models in `app/Models/`
-2. **Migrations**: Create migrations with `docker-compose exec app php artisan make:migration`
+2. **Migrations**: Create migrations with `docker-compose exec laravel-wms-app php artisan make:migration`
 3. **Controllers**: Add API controllers in `app/Http/Controllers/Api/`
 4. **Services**: Implement business logic in `app/Services/`
 5. **Repositories**: Add data access layer in `app/Repositories/`
