@@ -227,6 +227,52 @@ curl -X POST http://localhost:8080/api/boxes/$BOX_ID/assign-location \
   -d '{"location_id": 1}'
 ```
 
+## 📸 API Screenshots
+
+Below are screenshots of the API in action using Postman, demonstrating the key WMS functionality:
+
+### Pallet Management
+
+#### Creating a New Pallet
+![Scan New Pallet](resources/docs/postman/screenshots/scan_new_pallet.png)
+*Screenshot showing successful creation of a new pallet with barcode scanning*
+
+#### Pallet Creation Error Handling
+![Scan New Pallet Error](resources/docs/postman/screenshots/scan_new_pallet_to_see_error.png)
+*Screenshot showing validation error when trying to create a pallet with duplicate barcode*
+
+#### Retrieving Pallet Details
+![Get Pallet by ID](resources/docs/postman/screenshots/get_pallet_by_id.png)
+*Screenshot showing pallet details retrieval with associated boxes and their current status*
+
+#### Completing a Pallet
+![Complete Pallet](resources/docs/postman/screenshots/complete_pallet.png)
+*Screenshot showing successful pallet completion, moving all boxes to WMS status*
+
+#### Pallet Completion Error Handling
+![Complete Pallet Error](resources/docs/postman/screenshots/complete_pallet_to_see_error.png)
+*Screenshot showing error when trying to complete an already completed pallet*
+
+### Box Management
+
+#### Scanning a New Box
+![Scan New Box](resources/docs/postman/screenshots/scan_new_box.png)
+*Screenshot showing successful box scanning and association with a pallet*
+
+#### Box Scanning Error Handling
+![Scan New Box Error](resources/docs/postman/screenshots/scan_new_box_to_see_error.png)
+*Screenshot showing validation error when trying to scan a box with duplicate barcode or invalid pallet*
+
+### Location Assignment
+
+#### Assigning Box to Location
+![Assign Box to Location](resources/docs/postman/screenshots/assign_box_to_new_location.png)
+*Screenshot showing successful assignment of a box to a warehouse location (PUTAWAY operation)*
+
+#### Location Assignment Error Handling
+![Assign Box to Location Error](resources/docs/postman/screenshots/assign_box_to_new_locatioto_see_error.png)
+*Screenshot showing error when trying to assign location to a box that's not in WMS status*
+
 ## 🗂 Project Structure
 
 ```
